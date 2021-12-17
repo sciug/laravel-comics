@@ -164,3 +164,83 @@ display:flex;
     letter-spacing: .5px;
      padding: .5rem 4rem;
 }
+
+
+//footer
+.background_footer{
+    height: 350px;
+    background-size: cover;
+    background-image: url('../img/footer-bg.jpg');
+  }
+
+.footer_container{
+    height: 100%;
+    
+}
+.footer_info,
+.footer_logo_png{
+    width: 45%;
+}
+.info_sec{
+    width: 25%;
+    margin-top: 2rem;
+    .info_sec_bottom{
+        margin-top: 1.5rem;
+    }
+    h4{
+        margin-bottom: 1rem;
+        color: white;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+    ul{
+        list-style: none;
+        li{
+            a{
+             text-decoration: none;
+            color: rgba(182, 181, 181, 0.664);
+            font-size: .9rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: .5px;
+
+        }
+           
+        }
+    }
+}
+.footer_logo_png{
+    height: 100%;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+//footer -------- sign up
+
+
+.footer_sign_up_bg{
+    background-color: $third_color;
+}
+.social{
+    list-style: none;
+    align-items: center;
+    .follow{
+        color:$base_color;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    li{
+        margin: 0 1rem;
+    }
+}
+.sign-up{
+    border: 2px solid $base_color;
+    background:none;
+     padding: .5rem 1rem;
+     font-family: Arial, Helvetica, sans-serif;
+    
+}
