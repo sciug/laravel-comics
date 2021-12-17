@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('page-title')
+news
+@endsection
 @section('content')
 
 <div class="content">
