@@ -3,17 +3,10 @@
           <img src="{{asset('img/dc-logo.png')}}" alt="dc logo">
       </div>
       <nav class="menu">
-          <a href="{{route('news')}}">Characters</a>
-          <a href="{{route('welcome')}}" class="active">Comics</a>
-          <a href="{{route('news')}}">Movies</a>
-          <a href="{{route('news')}}">Tv</a>
-          <a href="{{route('news')}}">Games</a>
-          <a href="{{route('news')}}">collectibles</a>
-          <a href="{{route('news')}}">videos</a>
-          <a href="{{route('news')}}">fans</a>
-          <a href="{{route('news')}}">news</a>
-          <a href="{{route('news')}}">shop</a>
-          <div class="search_wrapper">
+          
+              @foreach(config('db.menu') as $item)
+              <a href="{{route($item['href'])}}" class="{{Route::currentRouteName() ===$item['href'] ? 'active' : ''}}">{{$item['text']}}</a>
+              @endforeach
           <input class="searchbar" type="text" placeholder="search">
           <i class="fas fa-search"></i>
           </div>

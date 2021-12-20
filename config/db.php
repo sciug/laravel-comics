@@ -2,14 +2,14 @@
 return [
     'products'=>
     [
-           [
+          [
             "thumb"=>"https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
             "price"=>"$19.99",
             "series"=>"Action Comics",
             "type"=>"comic book",
             "info"=> "Batman and Catwoman may have just gotten back together, but Joker is ready to complicate things by asking Selina for a favor that could lead to Batman’s demise! That’s not the only trick he has up his sleeve…he’s also hiding a secret that will drive Phantasm mad. Plus, Batwoman hunts down her own mother!",
             "artists" => ["Matt Banning","David Finch","Matt Banning","David Finch","Matt Banning","David Finch","Matt Banning","David Finch","Matt Banning","David Finch"]
-            ],
+          ],
           [
             "thumb"=>"https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/09/AV1976_01_300-001_HD_5f738f6e39ddd7.18205602.jpg?itok=VgdYdJ01",
             "price"=>"$3.99",
@@ -18,7 +18,6 @@ return [
             "info"=> "Batman and Catwoman may have just gotten back together, but Joker is ready to complicate things by asking Selina for a favor that could lead to Batman’s demise! That’s not the only trick he has up his sleeve…he’s also hiding a secret that will drive Phantasm mad. Plus, Batwoman hunts down her own mother!",
             "artists" => ["Matt Banning","David Finch","Matt Banning","David Finch","Matt Banning","David Finch","Matt Banning","David Finch","Matt Banning","David Finch"]
           ],
-    
           [
             "thumb"=>"https://www.dccomics.com/sites/default/files/styles/covers192x291/public/gn-covers/2018/08/AQMv4_UW_153-001_HD_5b7efa1745a9b8.08589135.jpg?itok=HPTtnrsb",
             "price"=>"$16.99",
@@ -99,6 +98,40 @@ return [
             "info"=> "Batman and Catwoman may have just gotten back together, but Joker is ready to complicate things by asking Selina for a favor that could lead to Batman’s demise! That’s not the only trick he has up his sleeve…he’s also hiding a secret that will drive Phantasm mad. Plus, Batwoman hunts down her own mother!",
             "artists" => ["Matt Banning","David Finch","Matt Banning","David Finch","Matt Banning","David Finch","Matt Banning","David Finch","Matt Banning","David Finch"]
           ]
-        
+      
+    ],
+    'menu' =>[
+      ['href' => 'characters',
+      'text' => 'characters'],
+
+      ['href' => 'comics',
+      'text' => 'comics'],
+
+      ['href' => 'movies',
+      'text' => 'movies'],
+
+      ['href' => 'tv',
+      'text' => 'tv'],
+
+      ['href' => 'games',
+      'text' => 'games'],
+
+      ['href' => 'collectibles',
+      'text' => 'collectibles'],
+
+      ['href' => 'videos',
+      'text' => 'videos'],
+
+      ['href' => 'fans',
+      'text' => 'fans'],
+
+      ['href' => 'news',
+      'text' => 'news'],
+
+      ['href' => 'shop',
+      'text' => 'shop'],
+
+
     ]
+
           ];
