@@ -13,6 +13,11 @@
           <a href="{{route('news')}}">fans</a>
           <a href="{{route('news')}}">news</a>
           <a href="{{route('news')}}">shop</a>
+          <div class="search_wrapper">
+          <input class="searchbar" type="text" placeholder="search">
+          <i class="fas fa-search"></i>
+          </div>
+          
 
           
 

@@ -10,7 +10,7 @@ home
       </div>
       
       <div class="container padding relative">
-           <h2 class="current_series_title">HOME</h2>
+           <h2 class="current_series_title">current series</h2>
            <div class="products row justify_center">
 
 
