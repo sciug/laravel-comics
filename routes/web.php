@@ -30,8 +30,16 @@ Route::get('/comics', function () {
 Route::get('/comics/{id}', function ($id) {
     $products = config('db.products');
 
-    $product = $products[$id];
-    return view('comics.show', compact('product'));
+    if(is_numeric($id) && $id >= 0 &&$id < count($products)){
+        $product = $products[$id];
+        return view('comics.show', compact('product'));
+
+    }else{
+        abort(404);
+    }
+
+    
+    
 })-> name('comic');
 
 
