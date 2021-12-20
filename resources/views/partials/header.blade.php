@@ -7,9 +7,12 @@
               @foreach(config('db.menu') as $item)
               <a href="{{route($item['href'])}}" class="{{Route::currentRouteName() ===$item['href'] ? 'active' : ''}}">{{$item['text']}}</a>
               @endforeach
-          <input class="searchbar" type="text" placeholder="search">
+
+              <div class="search_wrapper">
+              <input class="searchbar" type="text" placeholder="search">
           <i class="fas fa-search"></i>
-          </div>
+              </div>
+         
           
 
           
