@@ -43,7 +43,7 @@ home
 
                  </div>
                  <div  class="product_description">
-                 <p>{{$product['info']}}</p>
+                 <p>{{$product['description']}}</p>
                  </div>
 
              </div>
@@ -51,7 +51,7 @@ home
          </div>
 
          <div class="adv">
-             <h5>advertisemnt</h5>
+             <h5>advertisement</h5>
              <div class="adv_wrapper">
                  <img src="{{asset('img/sup.png')}}" alt="">
              </div>
@@ -71,7 +71,10 @@ home
                       <div class="artists_wrapper">
                       <a class="artist" href="#">
                           @foreach($product['artists'] as $artist)
-                          {{$artist}},
+                          {{$artist}}
+                          @if(!$loop->last)
+                          ,
+                          @endif
                           @endforeach
 
                       </a>
@@ -83,8 +86,11 @@ home
                       <p class="authors">Written by:</p>
                       <div class="artists_wrapper">
                       <a class="artist" href="#">
-                          @foreach($product['artists'] as $artist)
-                          {{$artist}},
+                          @foreach($product['writers'] as $writer)
+                          {{$writer}}
+                          @if(!$loop->last)
+                          ,
+                          @endif
                           @endforeach
 
                       </a>
@@ -124,7 +130,8 @@ home
                       <p class="authors">On sale date</p>
                       <div class="artists_wrapper">
                       <a class="info_spec artist" href="#">
-                      Oct 02 2018
+                      {{$product['sale_date']}}
+
 
                       </a>
                       </div>
@@ -144,7 +151,7 @@ home
           <div class="icon_container">
           <p>Digital comics</p>
               <div class="icon">
-                  <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
+                  <img src="{{asset('img/icon.png')}}" alt="">
               </div>
               
 
@@ -152,7 +159,7 @@ home
            <div class="icon_container">
            <p>dc merchandise</p>
               <div class="icon">
-                  <img src="{{asset('img/buy-comics-merchandise.png')}}" alt="">
+                  <img src="{{asset('img/icon4.png')}}" alt="">
               </div>
               
 
@@ -160,7 +167,7 @@ home
            <div class="icon_container">
            <p>subscription</p>
               <div class="icon">
-                  <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="">
+                  <img src="{{asset('img/icon3.png')}}" alt="">
               </div>
              
 
@@ -168,7 +175,7 @@ home
            <div class="icon_container last">
            <p>comic shop locator</p>
               <div class="icon">
-                  <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="">
+                  <img src="{{asset('img/icon2.png')}}" alt="">
               </div>
              
 
