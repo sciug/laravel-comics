@@ -19,6 +19,10 @@
               @foreach(config('db.menu') as $item)
               <a href="{{route($item['href'])}}" class="{{Route::currentRouteName() ===$item['href'] ? 'active' : ''}}">
                   {{$item['text']}}
+                  @if($item['href']==='shop')
+                  <i class="fas fa-sort-down"></i>
+                  @endif
+
 
                   
 
